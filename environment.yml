@@ -12,6 +12,7 @@ dependencies:
   - joblib= # used only in chapter 2 to save/load Scikit-Learn models
   - jupyterlab # to edit and run Jupyter notebooks
   - matplotlib # beautiful plots. See tutorial tools_matplotlib.ipynb
+  - seaborn # seaborn makes it easier to plot from Data Frames
   - nbdime # optional tool to diff Jupyter notebooks
   - nltk # optionally used in chapter 3, exercise 4
   - numexpr # used only in the Pandas tutorial for numerical expressions
