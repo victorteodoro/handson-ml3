@@ -2,6 +2,7 @@ name: homl3
 channels:
   - conda-forge
   - defaults
+  - rocketce
 dependencies:
   - box2d-py # used only in chapter 18, exercise 8
   - ffmpeg # used only in the matplotlib tutorial to generate animations
@@ -30,18 +31,18 @@ dependencies:
   - statsmodels # used only in chapter 15 for time series analysis
   - tqdm # used only in chapter 12 to display nice progress bars
   - wheel # built-package format for pip
-  - widgetsnbextensionE # interactive HTML widgets for Jupyter notebooks
+  - widgetsnbextension # interactive HTML widgets for Jupyter notebooks
+  - keras-tuner # used in chapters 10 and 19 for hyperparameter tuning
+  - tensorboard # TensorFlow's visualization toolkit
+  - tensorflow-datasets # datasets repository, ready to use
+  - tensorflow-hub # trained ML models repository, ready to use
+  - tensorflow-serving-api # or tensorflow-serving-api-gpu if gpu
+  - tensorflow # Deep Learning library
+  - transformers # Natural Language Processing lib for TF or PyTorch
+  - gym[classic_control,atari,accept-rom-license] # used only in ch18
+  - google-cloud-aiplatform # used only in chapter 19
+  - google-cloud-storage # used only in chapter 19
   - pip:
-      - keras-tuner # used in chapters 10 and 19 for hyperparameter tuning
-      - tensorboard-plugin-profile # profiling plugin for TensorBoard
-      - tensorboard # TensorFlow's visualization toolkit
       - tensorflow-addons # used in chapters 11 & 16 (for AdamW & seq2seq)
-      - tensorflow-datasets # datasets repository, ready to use
-      - tensorflow-hub # trained ML models repository, ready to use
-      - tensorflow-serving-api # or tensorflow-serving-api-gpu if gpu
-      - tensorflow # Deep Learning library
-      - transformers # Natural Language Processing lib for TF or PyTorch
       - urlextract # optionally used in chapter 3, exercise 4
-      - gym[classic_control,atari,accept-rom-license] # used only in ch18
-      - google-cloud-aiplatform # used only in chapter 19
-      - google-cloud-storage # used only in chapter 19
+      - tensorboard-plugin-profile # profiling plugin for TensorBoard
